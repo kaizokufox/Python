@@ -1,0 +1,135 @@
+#1) calcular a soma dos numeros digitados e a media
+'''
+soma = 0
+media = 0
+numero = 1
+qdt = 0
+while numero != 0 :
+    numero = int(input("Digite um numero: "))
+    if numero != 0:
+       soma = soma + numero
+       qdt = qdt + 1
+    media = soma / qdt
+print("A soma dos números é: %d " % soma)
+print("A media dos números é: %d " % media)
+'''
+#2) somar os pares de 10 numeros
+'''
+soma = 0
+x = 0
+while x <10 :
+    numero = int(input("Digite um número: "))
+    if (numero % 2) == 0 :
+        soma = soma + numero # somando o contador
+    x = x +1
+print("A soma dos numeros pares: %d " % soma)            
+'''
+#3)programa q ler 10 numero e mostra os positivos, negativos e 0
+'''
+x = 0
+soma = 0
+negat = 0
+zero = 0
+while x < 5:
+    numero = int(input("Digite um numero: "))
+    if numero < 0:
+        negat = negat + 1
+    elif numero > 0 :
+        soma = soma + 1# contador da condição
+    else:
+        zero = zero + 1
+    x=x+1# contador do while
+print("Soma dos numeros negativos: %d e dos numeros zero: %d e numeros inteiros: %d" % (negat, zero, soma))
+'''
+
+#4)Repetidor de 0 a 50 convertendo celsius para farenheit
+'''
+tf = 0
+tc = 0
+while tc < 51:
+    print(tc , "Graus Celsius para graus Farenheit:" ,tf )
+    tf = (1.8 * tc) + 32
+    tc = tc +1
+print("saiu")
+'''
+
+#5)
+x = 1
+conta = 0
+while x != -1:
+        nota = int(input("Digite a nota1 do aluno: "))
+        x = x + 1
+        if x < 0 :
+            break
+media = nota1 / x
+print("A media é: %d " % media)
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+# Exemplo de WHILE
+'''no while podemos fazer repedição sem determinada quantidade de repetição'''
+'''
+x=0
+while x <3 :
+    print("O valor de X é: %d" %x)
+    x=x+1
+print("Saiu do While")
+'''
+
+#Primeiro exemplo de FOR
+'''
+x = 0
+for x in range (3):
+    print("O valor de X é: %d" % x)
+print("Saiu do laço")
+'''
+
+#Segundo Exemplo de FOR
+'''
+for x in range (50,100) : #X vai  de 50 a 99
+    if x == 88 :
+        break
+    print(x)
+print("Saiu do FOR")
+'''
+
+#Terceiro exemplo com FOR-  soma dos números impares
+'''
+total = 0
+numero = int(input("Digite um número: "))
+if(numero % 2) == 0:
+    numero = numero -1
+for i in range(numero,0,-2): # I vai de "numero" até 0, decrementando de 2
+    total = total +1
+    print("Valor de i %d:" % i)
+print("A soma dos números impares é %d: " % total)
+'''
